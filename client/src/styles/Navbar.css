@@ -1,0 +1,67 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  background: rgb(239, 235, 235);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
+}
+.nav-logo {
+  margin-top: 5px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  width: 15%;
+}
+.nav-logo img {
+  width: 55px;
+  height: 55px;
+  padding: 2px;
+}
+.nav-logo label {
+  font-size: 30px;
+  padding: 2px;
+}
+.nav_links {
+  width: 75%;
+  padding-top: 10px;
+}
+.nav_links ul {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+}
+.nav_links li {
+  display: inline-block;
+  margin: 0 18px;
+}
+.nav_links li a {
+  font-size: 18px;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+.nav_links li a:hover {
+  background-color: #1e487a;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav_links .active {
+  background-color: #0f2846;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.admin-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  color: #1e487a;
+  cursor: pointer;
+}
+.admin-tab:hover {
+  color: #0f2846;
+}

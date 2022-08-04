@@ -1,0 +1,139 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.login-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 10px;
+  height: 600px;
+  width: 500px;
+}
+.login-card img {
+  width: 120px;
+  height: 125px;
+  margin-bottom: 20px;
+}
+.login-card input {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 0.9rem 0.9rem;
+  margin: 0.5rem 0;
+  width: 330px;
+  border: 0.5px solid white;
+  border-radius: 15px;
+  padding-left: 40px;
+}
+.login-card input:focus {
+  outline: none;
+}
+.btn {
+  background-color: rgb(15, 40, 70);
+  border-radius: 10px;
+  border: 1px solid "#0f2846";
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 0.9rem 4rem;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  margin-top: 1.5rem;
+  width: 300px;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:focus {
+  outline: none;
+}
+.forgot {
+  color: #0f2846;
+  font-weight: bold;
+  font-size: small;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.input-container {
+  position: relative;
+}
+.input-container .icon {
+  color: #6d6d6d;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  padding: 9px 8px;
+  font-size: 20px;
+}
+.input-container .icon2 {
+  color: #6d6d6d;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  padding: 9px 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.app-version {
+  font-weight: bolder;
+  color: #6d6d6d;
+}
+.or {
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+.or::after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background: #e0dcdc;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+.or::before {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background: #e0dcdc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+span {
+  background: #e0dcdc;
+}
+/* Page 2 */

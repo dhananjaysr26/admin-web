@@ -1,0 +1,236 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
+}
+.top-heading {
+  width: 20%;
+  padding: 10px;
+}
+.top-heading .title {
+  font-weight: bolder;
+  color: rgb(28, 7, 148);
+}
+.top-heading .sub-title {
+  font-weight: bold;
+  color: rgb(25, 26, 26);
+  font-size: 20px;
+}
+.top-links {
+  width: 80%;
+  padding-top: 13px;
+}
+.top-links ul {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  list-style: none;
+  padding-left: 200px;
+}
+.top-links ul li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+.top-links ul li a {
+  font-size: 18px;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+.top-links ul li a:hover {
+  color: rgb(52, 50, 50);
+  cursor: pointer;
+  border-bottom: 2px solid rgb(76, 3, 144);
+}
+.top-links .top-active {
+  color: rgb(52, 50, 50);
+  cursor: pointer;
+  border-bottom: 2px solid rgb(76, 3, 144);
+}
+/* MAIN CONTAINER */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  width: 100%;
+  background: rgb(239, 235, 235);
+}
+.side-bar {
+  width: 20%;
+  background: rgb(239, 235, 235);
+}
+.side-bar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.side-bar ul li {
+  display: block;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+.side-bar li a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px;
+}
+.side-bar li a:hover {
+  background-color: #70a6e86d;
+  color: rgb(43, 155, 247);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.side-bar .active-sidebar {
+  background-color: #70a6e86d;
+  color: rgb(43, 155, 247);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.view-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.view-head {
+  background-color: white;
+  height: 20%;
+  margin: 7px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.view-head-title {
+  width: 40%;
+  padding: 10px;
+  color: rgb(124, 124, 124);
+}
+.view-head-title .version {
+  padding-left: 20px;
+}
+.view-head-risk {
+  font-size: 28px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #0f2846;
+}
+.view-head-data .view-num {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 10px;
+  color: rgb(81, 156, 247);
+}
+.view-head-data {
+  width: 20%;
+  padding: 10px;
+  color: rgb(92, 92, 92);
+  font-weight: 550;
+}
+.view-body {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.view-body-main {
+  width: 75%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+.view-filter {
+  width: 25%;
+  background-color: white;
+  padding: 5px;
+}
+.view-filter h3 {
+  padding-left: 0.7em;
+}
+.select-container {
+  padding-left: 0.7em;
+  margin-top: 5px;
+}
+.select-container label {
+  display: block;
+}
+.select-container select {
+  width: 80%;
+  height: 25px;
+  margin-top: 5px;
+  background: rgb(239, 235, 235);
+  border: 1px solid rgb(211, 208, 208);
+}
+.view-tabs {
+  height: 10%;
+  background-color: rgb(239, 235, 235);
+}
+.view-tabs ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+.view-tabs li {
+  display: inline-block;
+  margin: 5px;
+}
+.view-tabs li a {
+  font-size: 15px;
+  border: 1px solid transparent;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+}
+.view-tabs li a:hover {
+  background-color: #1e487a;
+  color: white;
+  cursor: pointer;
+}
+.view-tabs .active {
+  background-color: #1e487a;
+  color: white;
+  cursor: pointer;
+}
+.view-tabs-bar {
+  height: 10%;
+  background-color: rgb(239, 235, 235);
+}
+.view-tabs-bar ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding-left: 0;
+}
+.view-tabs-bar ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.view-tabs-bar li a {
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+.view-tabs-bar li a:hover {
+  color: rgb(52, 50, 50);
+  cursor: pointer;
+  border-bottom: 2px solid rgb(76, 3, 144);
+}
+.view-tabs-bar .tabs-active {
+  color: rgb(52, 50, 50);
+  cursor: pointer;
+  border-bottom: 2px solid rgb(76, 3, 144);
+}
+.view-main {
+  height: 80%;
+  background-color: beige;
+}
