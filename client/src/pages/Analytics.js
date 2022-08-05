@@ -1,6 +1,48 @@
 import React from 'react'
+import {
+    CartesianGrid,
+    Legend,
+    LineChart,
+    Line,
+    XAxis,
+    YAxis,
+    Tooltip
+} from "recharts";
+
 import '../styles/Analytics.css'
 function Analytics() {
+    const data = [
+        {
+            name: "Q1",
+            2021: 0.2,
+            2022: 0.7,
+            amt: 1
+        },
+        {
+            name: "Q2",
+            2021: 0.3,
+            2022: 1,
+            amt: 1
+        },
+        {
+            name: "Q3",
+            2021: 0.6,
+            2022: 1.2,
+            amt: 1
+        },
+        {
+            name: "Q4",
+            2021: 0.5,
+            2022: 1.5,
+            amt: 1
+        },
+        {
+            name: "Q5",
+            2021: 0.4,
+            2022: 1.8,
+            amt: 1
+        }
+    ];
     return (
         <div>
             <div className='top-bar'>
@@ -64,7 +106,77 @@ function Analytics() {
                                 </ul>
                             </div>
                             <div className='view-main'>
-
+                                <div className="chart-container">
+                                    <h2>Risk Trend</h2>
+                                    <div className="chart">
+                                        <LineChart
+                                            width={730}
+                                            height={250}
+                                            data={data}
+                                            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                                        >
+                                            <CartesianGrid strokeDasharray="3 3" />
+                                            <XAxis dataKey="name" />
+                                            <YAxis />
+                                            <Tooltip />
+                                            <Legend />
+                                            <Line type="monotone" dataKey="2021" stroke="#8884d8" />
+                                            <Line type="monotone" dataKey="2022" stroke="#82ca9d" />
+                                        </LineChart>
+                                    </div>
+                                </div>
+                                <div className='view-table'>
+                                    <h2>Live Across Disease</h2>
+                                    <table className='table-data'>
+                                        <tbody>
+                                            <tr>
+                                                <th>Disease</th>
+                                                <th>Attributed Lives</th>
+                                                <th>Contribution</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Diabetes</td>
+                                                <td>6,969</td>
+                                                <td>
+                                                    <div className='contri-fill' style={{ width: '80%' }}></div>
+                                                    <div className='contri-blank'>14.59%</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>CHF</td>
+                                                <td>4,231</td>
+                                                <td>
+                                                    <div className='contri-fill' style={{ width: '70%' }}></div>
+                                                    <div className='contri-blank' style={{ width: '30%' }}>10.68%</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>COPD</td>
+                                                <td>3,854</td>
+                                                <td>
+                                                    <div className='contri-fill' style={{ width: '60%' }}></div>
+                                                    <div className='contri-blank' style={{ width: '40%' }}>9.41%</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>CKD</td>
+                                                <td>2,429</td>
+                                                <td>
+                                                    <div className='contri-fill' style={{ width: '40%' }}></div>
+                                                    <div className='contri-blank' style={{ width: '60%' }}>5.59%</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Renal Failure</td>
+                                                <td>2,154</td>
+                                                <td>
+                                                    <div className='contri-fill' style={{ width: '30%' }}></div>
+                                                    <div className='contri-blank' style={{ width: '70%' }}></div>4.76%
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         <div className='view-filter'>
